@@ -76,7 +76,7 @@ Now that you have a copy of the latest Piwik source code, you can start modifyin
 
 #### Create a new branch
 
-Before you start coding, you should make sure to keep your changes separate from the `3.x-dev` branch. This will make it much easier to track the changes specific to your feature since your changes won't be mixed with any new commits to the `3.x-dev` branch from other developers.
+Before you start coding, you should make sure to keep your changes separate from the `4.x-dev` branch. This will make it much easier to track the changes specific to your feature since your changes won't be mixed with any new commits to the `4.x-dev` branch from other developers.
 
 We'll give our new branch a name, _bugfix_, that describes what we're doing, so we can recognize it later. To add a new branch, run the following command:
 
@@ -92,16 +92,16 @@ Once you've created a branch, you have a place to start working on the feature. 
 
 If you're working on something more complex than a bugfix, you may have the need to keep your new branch updated with changes from the main repository. Keeping your branch up to date is a two-step process.
 
-First, on your **3.x-dev** branch, pull changes from the main Piwik repository, nicknamed _upstream_:
+First, on your **4.x-dev** branch, pull changes from the main Piwik repository, nicknamed _upstream_:
 
 ```bash
-git pull upstream 3.x-dev
+git pull upstream 4.x-dev
 ```
 
-Then, on your new branch (**bugfix** for this tutorial), merge with **3.x-dev**:
+Then, on your new branch (**bugfix** for this tutorial), merge with **4.x-dev**:
 
 ```bash
-git merge 3.x-dev
+git merge 4.x-dev
 ```
 
 If there are conflicts, you can read this guide: [How to resolve Git conflicts](https://githowto.com/resolving_conflicts).
@@ -129,6 +129,12 @@ On this screen you'll be able to see exactly what changes you've made by looking
 Read [Creating Pull requests: best practises](#creating-pull-requests-best-practises) to maximise your changes to create a great pull request.
 
 Once you're ready to create the pull request, write a description of the pull request and any notes that are important for the person who will review your code, and then click _Send pull request_. This will create a new pull request which you will be able to find and view [here](https://github.com/matomo-org/matomo/pulls).
+
+If the PR is ready for a review, assign the label `Needs Review` and put it in the correct milestone. The milestone for the PR is usually the same milestone as the original issue you worked on.  If there is an issue for this PR, then we also assign the label `Not In Changelog`. This prevents the same issue being listed twice in the changelog. A PR will only be reviewed when it has the `Needs Review` label.
+
+If the PR is not ready for a review yet and the PR is in progress, then you can click on the link `Convert to draft` which you find in the Github PR UI below `Reviewers`. Once you finished the work for the PR and it's ready for a review, you can click on `Ready for review` where it says `This pull request is still a work in progress` and assign the labels as mentioned above.
+
+For more PR best practices read below.
 
 #### Updating the pull request
 

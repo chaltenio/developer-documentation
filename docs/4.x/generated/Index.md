@@ -161,7 +161,7 @@ Index
 - [`clearCache()`](Piwik/Site.md#clearcache) &mdash; *Method in class* [`Site`](Piwik/Site.md)
 - [`clearCacheForSite()`](Piwik/Site.md#clearcacheforsite) &mdash; *Method in class* [`Site`](Piwik/Site.md)
 - [`clean()`](Piwik/Translation/Translator.md#clean) &mdash; *Method in class* [`Translator`](Piwik/Translation/Translator.md)
-- [`createTable()`](Piwik/Updater/Migration/Db/Factory.md#createtable) &mdash; *Method in class* [`Factory`](Piwik/Updater/Migration/Db/Factory.md)
+- [`Custom`](Piwik/Updater/Migration/Custom.md) &mdash; *Class in namespace* [`Piwik\Updater\Migration`](Piwik/Updater/Migration)- [`createTable()`](Piwik/Updater/Migration/Db/Factory.md#createtable) &mdash; *Method in class* [`Factory`](Piwik/Updater/Migration/Db/Factory.md)
 - [`changeColumn()`](Piwik/Updater/Migration/Db/Factory.md#changecolumn) &mdash; *Method in class* [`Factory`](Piwik/Updater/Migration/Db/Factory.md)
 - [`changeColumnType()`](Piwik/Updater/Migration/Db/Factory.md#changecolumntype) &mdash; *Method in class* [`Factory`](Piwik/Updater/Migration/Db/Factory.md)
 - [`changeColumnTypes()`](Piwik/Updater/Migration/Db/Factory.md#changecolumntypes) &mdash; *Method in class* [`Factory`](Piwik/Updater/Migration/Db/Factory.md)
@@ -250,6 +250,7 @@ Index
 - [`executeMigrations()`](Piwik/Updater.md#executemigrations) &mdash; *Method in class* [`Updater`](Piwik/Updater.md)
 - [`executeMigration()`](Piwik/Updater.md#executemigration) &mdash; *Method in class* [`Updater`](Piwik/Updater.md)
 - [`exec()`](Piwik/Updater/Migration.md#exec) &mdash; *Method in class* [`Migration`](Piwik/Updater/Migration.md)
+- [`exec()`](Piwik/Updater/Migration/Custom.md#exec) &mdash; *Method in class* [`Custom`](Piwik/Updater/Migration/Custom.md)
 - [`$enable_sort`](Piwik/ViewDataTable/Config.md#$enable_sort) &mdash; *Property in class* [`Config`](Piwik/ViewDataTable/Config.md)
 - [`$expanded`](Piwik/ViewDataTable/RequestConfig.md#$expanded) &mdash; *Property in class* [`RequestConfig`](Piwik/ViewDataTable/RequestConfig.md)
 - [`enable()`](Piwik/Widget/WidgetConfig.md#enable) &mdash; *Method in class* [`WidgetConfig`](Piwik/Widget/WidgetConfig.md)
@@ -357,6 +358,7 @@ Index
 - [`getCategoryId()`](Piwik/Category/Subcategory.md#getcategoryid) &mdash; *Method in class* [`Subcategory`](Piwik/Category/Subcategory.md)
 - [`getName()`](Piwik/Category/Subcategory.md#getname) &mdash; *Method in class* [`Subcategory`](Piwik/Category/Subcategory.md)
 - [`getOrder()`](Piwik/Category/Subcategory.md#getorder) &mdash; *Method in class* [`Subcategory`](Piwik/Category/Subcategory.md)
+- [`getHelp()`](Piwik/Category/Subcategory.md#gethelp) &mdash; *Method in class* [`Subcategory`](Piwik/Category/Subcategory.md)
 - [`getDbColumnJoin()`](Piwik/Columns/Dimension.md#getdbcolumnjoin) &mdash; *Method in class* [`Dimension`](Piwik/Columns/Dimension.md)
 - [`getDbDiscriminator()`](Piwik/Columns/Dimension.md#getdbdiscriminator) &mdash; *Method in class* [`Dimension`](Piwik/Columns/Dimension.md)
 - [`getEnumColumnValues()`](Piwik/Columns/Dimension.md#getenumcolumnvalues) &mdash; *Method in class* [`Dimension`](Piwik/Columns/Dimension.md)
@@ -371,6 +373,7 @@ Index
 - [`getId()`](Piwik/Columns/Dimension.md#getid) &mdash; *Method in class* [`Dimension`](Piwik/Columns/Dimension.md)
 - [`getAllDimensions()`](Piwik/Columns/Dimension.md#getalldimensions) &mdash; *Method in class* [`Dimension`](Piwik/Columns/Dimension.md)
 - [`getDimensions()`](Piwik/Columns/Dimension.md#getdimensions) &mdash; *Method in class* [`Dimension`](Piwik/Columns/Dimension.md)
+- [`getRemovedDimensions()`](Piwik/Columns/Dimension.md#getremoveddimensions) &mdash; *Method in class* [`Dimension`](Piwik/Columns/Dimension.md)
 - [`getModule()`](Piwik/Columns/Dimension.md#getmodule) &mdash; *Method in class* [`Dimension`](Piwik/Columns/Dimension.md)
 - [`getType()`](Piwik/Columns/Dimension.md#gettype) &mdash; *Method in class* [`Dimension`](Piwik/Columns/Dimension.md)
 - [`getTable()`](Piwik/Columns/Discriminator.md#gettable) &mdash; *Method in class* [`Discriminator`](Piwik/Columns/Discriminator.md)
@@ -772,6 +775,7 @@ Index
 - [`isOptimizeInnoDBSupported()`](Piwik/Db.md#isoptimizeinnodbsupported) &mdash; *Method in class* [`Db`](Piwik/Db.md)
 - [`IP`](Piwik/IP.md) &mdash; *Class in namespace* `Piwik`- [`info()`](Piwik/Log.md#info) &mdash; *Method in class* [`Log`](Piwik/Log.md)
 - [`isSmtpDebugEnabled()`](Piwik/Mail.md#issmtpdebugenabled) &mdash; *Method in class* [`Mail`](Piwik/Mail.md)
+- [`isReferrerHostValid()`](Piwik/Nonce.md#isreferrerhostvalid) &mdash; *Method in class* [`Nonce`](Piwik/Nonce.md)
 - [`isMultiplePeriod()`](Piwik/Period.md#ismultipleperiod) &mdash; *Method in class* [`Period`](Piwik/Period.md)
 - [`isDateInPeriod()`](Piwik/Period.md#isdateinperiod) &mdash; *Method in class* [`Period`](Piwik/Period.md)
 - [`isPeriodIntersectingWith()`](Piwik/Period.md#isperiodintersectingwith) &mdash; *Method in class* [`Period`](Piwik/Period.md)
@@ -847,7 +851,10 @@ Index
 
 ## L
 
-- [`LogAggregator`](Piwik/DataAccess/LogAggregator.md) &mdash; *Class in namespace* `Piwik\DataAccess`- [`Limit`](Piwik/DataTable/Filter/Limit.md) &mdash; *Class in namespace* `Piwik\DataTable\Filter`- [`$lockPrivilegeGranted`](Piwik/Db.md#$lockprivilegegranted) &mdash; *Property in class* [`Db`](Piwik/Db.md)
+- [`LogAggregator`](Piwik/DataAccess/LogAggregator.md) &mdash; *Class in namespace* `Piwik\DataAccess`- [`Limit`](Piwik/DataTable/Filter/Limit.md) &mdash; *Class in namespace* `Piwik\DataTable\Filter`- [`lastWeek()`](Piwik/Date.md#lastweek) &mdash; *Method in class* [`Date`](Piwik/Date.md)
+- [`lastMonth()`](Piwik/Date.md#lastmonth) &mdash; *Method in class* [`Date`](Piwik/Date.md)
+- [`lastYear()`](Piwik/Date.md#lastyear) &mdash; *Method in class* [`Date`](Piwik/Date.md)
+- [`$lockPrivilegeGranted`](Piwik/Db.md#$lockprivilegegranted) &mdash; *Property in class* [`Db`](Piwik/Db.md)
 - [`lockTables()`](Piwik/Db.md#locktables) &mdash; *Method in class* [`Db`](Piwik/Db.md)
 - [`LanguageDataProvider`](Piwik/Intl/Data/Provider/LanguageDataProvider.md) &mdash; *Class in namespace* `Piwik\Intl\Data\Provider`- [`Log`](Piwik/Log.md) &mdash; *Class in namespace* `Piwik`- [`loadAllPluginsAndGetTheirInfo()`](Piwik/Plugin/Manager.md#loadallpluginsandgettheirinfo) &mdash; *Method in class* [`Manager`](Piwik/Plugin/Manager.md)
 
@@ -989,6 +996,7 @@ Index
 ## S
 
 - [`shouldLoadFlatten()`](Piwik/API/Request.md#shouldloadflatten) &mdash; *Method in class* [`Request`](Piwik/API/Request.md)
+- [`shouldSkipArchiveIfSkippingSegmentArchiveForToday()`](Piwik/Archive.md#shouldskiparchiveifskippingsegmentarchivefortoday) &mdash; *Method in class* [`Archive`](Piwik/Archive.md)
 - [`setArchiveOnlyReport()`](Piwik/ArchiveProcessor/Parameters.md#setarchiveonlyreport) &mdash; *Method in class* [`Parameters`](Piwik/ArchiveProcessor/Parameters.md)
 - [`setTokenAuth()`](Piwik/Auth.md#settokenauth) &mdash; *Method in class* [`Auth`](Piwik/Auth.md)
 - [`setLogin()`](Piwik/Auth.md#setlogin) &mdash; *Method in class* [`Auth`](Piwik/Auth.md)
@@ -1103,6 +1111,7 @@ Index
 - [`setCurrentLanguage()`](Piwik/Translation/Translator.md#setcurrentlanguage) &mdash; *Method in class* [`Translator`](Piwik/Translation/Translator.md)
 - [`shouldIgnoreError()`](Piwik/Updater/Migration.md#shouldignoreerror) &mdash; *Method in class* [`Migration`](Piwik/Updater/Migration.md)
 - [`set()`](Piwik/Updater/Migration/Config/Factory.md#set) &mdash; *Method in class* [`Factory`](Piwik/Updater/Migration/Config/Factory.md)
+- [`shouldIgnoreError()`](Piwik/Updater/Migration/Custom.md#shouldignoreerror) &mdash; *Method in class* [`Custom`](Piwik/Updater/Migration/Custom.md)
 - [`sql()`](Piwik/Updater/Migration/Db/Factory.md#sql) &mdash; *Method in class* [`Factory`](Piwik/Updater/Migration/Db/Factory.md)
 - [`$sendHeadersWhenRendering`](Piwik/View.md#$sendheaderswhenrendering) &mdash; *Property in class* [`View`](Piwik/View.md)
 - [`setContentType()`](Piwik/View.md#setcontenttype) &mdash; *Method in class* [`View`](Piwik/View.md)
@@ -1316,6 +1325,8 @@ Index
 - [`__toString()`](Piwik/Site.md#__tostring) &mdash; *Method in class* [`Site`](Piwik/Site.md)
 - [`__construct()`](Piwik/Translation/Translator.md#__construct) &mdash; *Method in class* [`Translator`](Piwik/Translation/Translator.md)
 - [`__toString()`](Piwik/Updater/Migration.md#__tostring) &mdash; *Method in class* [`Migration`](Piwik/Updater/Migration.md)
+- [`__construct()`](Piwik/Updater/Migration/Custom.md#__construct) &mdash; *Method in class* [`Custom`](Piwik/Updater/Migration/Custom.md)
+- [`__toString()`](Piwik/Updater/Migration/Custom.md#__tostring) &mdash; *Method in class* [`Custom`](Piwik/Updater/Migration/Custom.md)
 - [`__construct()`](Piwik/View.md#__construct) &mdash; *Method in class* [`View`](Piwik/View.md)
 - [`__set()`](Piwik/View.md#__set) &mdash; *Method in class* [`View`](Piwik/View.md)
 - [`__get()`](Piwik/View.md#__get) &mdash; *Method in class* [`View`](Piwik/View.md)
